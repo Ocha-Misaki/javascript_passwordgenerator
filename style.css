@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+main{
+  margin: 32px auto;
+  width: fit-content;
+}
+
+p{
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  font-weight: normal;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  padding: 8px 4px;
+}
+
+button{
+  all: unset;
+  width: 300px; 
+  color: #fff;
+  background-color: #0a78b9;
+  border-radius: 8px;
+  margin: 20px 32px;
+  padding: 8px ;
+  text-align: center;
+  cursor: pointer;
+}
+
+button:hover{
+  opacity: .8;
+}
+
+button:active{
+  box-shadow: 0 1px lightgray;
+  transform: translateY(3px);
+}
+
+fieldset{
+  border-style: dashed;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+#password-length{
+  width: 24px;
+  display: inline-block;
+  text-align: center;
+}
+/* 長さ（）の部分が一桁、二桁で幅が変わってしまっていた。
+幅の指定と、インライン要素をブロックにして動かないようにする必要があった */

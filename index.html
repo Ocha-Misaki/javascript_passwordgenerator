@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PasswordGenerator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p>??????????</p>
+    <button>パスワードを生成</button>
+    <fieldset>
+      <legend>オプション</legend>
+      <label for="range">長さ(<span id="password-length"></span>)
+        <input type="range" id="slider" min="0" max="20">
+      </label>
+      <input type="checkbox" id="number">
+      <label for="number">数字</label>
+      <input type="checkbox" id="symbol">
+      <label for="symbol">記号</label>
+    </fieldset>
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
